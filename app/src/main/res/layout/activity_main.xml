@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+        <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/usu"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-31dp"
+                tools:layout_editor_absoluteY="0dp"/>
+        <TextView
+                android:id="@+id/tex_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Nombre:"
+                android:textColor="@color/purple_500"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.410"
+                android:paddingLeft="20dp"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/imagen" android:layout_marginTop="1dp" android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp" android:layout_marginBottom="1dp"/>
+
+        <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:hint="Escriba el nombre"
+                android:digits="aãâáàbcçdeéfghiíjklmnoõôóòpqrstuvwxyzAÃÂÁÀBCÇDEÉFGHIÍJKLMNOÕÔÓÒPQRSTUVWXYZ\n"
+                android:padding="10dp"
+                android:paddingRight="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.469"
+                android:paddingLeft="10dp"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/tex_nom" android:layout_marginTop="-11dp"/>
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Clave:"
+                android:textColor="@color/purple_500"
+                android:textSize="26sp"
+                android:paddingLeft="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.566"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/txtNombre"
+                android:layout_marginBottom="10dp" android:layout_marginTop="-18dp"/>
+
+        <EditText
+                android:id="@+id/txt_clave"
+                android:layout_width="354dp"
+                android:layout_height="71dp"
+                android:hint="Digite su clave(min 5 caracterteres)"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="330dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.61"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/textView" android:layout_marginTop="-16dp"/>
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Repetir clave:"
+                android:textColor="@color/purple_500"
+                android:textSize="26sp"
+                android:paddingTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.71"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/txt_clave"
+                android:layout_marginTop="-2dp"
+        />
+        <EditText
+                android:id="@+id/txt_clave2"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:hint="Debe ser la misma clave"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.761"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@+id/textView2" android:layout_marginTop="-16dp"/>
+        <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_clave2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="31dp"
+
+                android:textAlignment="center"
+                android:layout_x="99dp"
+                android:layout_y="579dp"
+                android:text="Registrar" android:layout_marginEnd="0dp"/>
+
+    </RelativeLayout>
+</layout>
